@@ -1,9 +1,14 @@
 import React from 'react'
 
 const App = () => {
+  const relative=['happy','sabu','harsh','via']
   return (
     <div id="main">
-               {/* Do not remove the main div */}
+             <ol>
+              {relative.map((item,index)=>{
+                return <li key={index}>{item}</li>
+              })}
+             </ol>
     </div>
   )
 }
